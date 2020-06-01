@@ -71,6 +71,7 @@ static constexpr HardFork::Params mainnet_hard_forks[] =
   { network_version_11_infinite_staking,    100,    0, 1588479344 }, // 2019-03-26 13:00AEDT
   { network_version_12_checkpointing,       130,    0, 1588479944 }, // 2019-07-24 14:00AEDT
   { network_version_13_enforce_checkpoints, 19736,  0, 1590710400 }, // 2020-05-29 16:00AEDT
+ // { network_version_14,                     30000,  0, 1591720607 }, // Tuesday, June 9, 2020 4:36:47 PM
 
 };
 
@@ -83,6 +84,8 @@ static constexpr HardFork::Params testnet_hard_forks[] =
   { network_version_11_infinite_staking,    5,      0, 1589999347 },
   { network_version_12_checkpointing,       30,     0, 1589999527 },
   { network_version_13_enforce_checkpoints, 35,     0, 1589999578 },
+  { network_version_14,                     14000,  0, 1591720607 }, // Tuesday, June 3
+
 };
 
 static constexpr HardFork::Params stagenet_hard_forks[] =
@@ -94,6 +97,8 @@ static constexpr HardFork::Params stagenet_hard_forks[] =
   { network_version_11_infinite_staking,    5,      0, 1589999347 },
   { network_version_12_checkpointing,       30,     0, 1589999527 },
   { network_version_13_enforce_checkpoints, 35,     0, 1589999578 },
+  { network_version_14,                     200,   0, 1591720607 }, 
+
 };
 
 uint64_t HardFork::get_hardcoded_hard_fork_height(network_type nettype, cryptonote::network_version version)
